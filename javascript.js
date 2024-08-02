@@ -28,22 +28,7 @@ function calculateTotalMarks() {
 
 // Function to get words for total marks
 function getWords(total) {
-    const ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
-    const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
-
-    let words = "";
-
-    if (total === 0) {
-        words = "Zero";
-    } else {
-        if (total < 20) {
-            words = ones[total];
-        } else {
-            words = tens[Math.floor(total / 10)] + (total % 10 != 0 ? " " + ones[total % 10] : "");
-        }
-    }
-
-    return words;
+    return "ZERO ZERO";
 }
 
 // Function to calculate result, percentage, and grade
